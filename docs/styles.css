@@ -1,0 +1,248 @@
+*{
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box; //para que las cajas no se desborden
+}
+body{
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+a{
+  text-decoration: none;
+}
+h1{
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 20px;
+  color: #5a534c;
+  text-align: center;
+  
+}
+.container{
+  display: flex;
+  flex-flow: column nowrap;
+  
+}
+
+.header{
+  background: url(img/playa1.jpg);
+  background-position: center;
+  background-attachment: contain;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+ 
+}
+.menu{
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex: 1 1 auto; 
+  height: 60px;
+  align-items: center;
+  flex-flow: row nowrap;
+border-bottom: 1px solid rgba(255, 255,255,.5);
+}
+.logo{
+  flex: 1 1 auto;
+}
+.logo a{
+  color: #fff;
+  font-size: 25px;
+}
+
+.logo a:hover{
+  color: #343434;
+}
+.nav{
+  flex: 5 1 auto;
+  
+}
+.nav a{
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  letter-spacing: 2px;
+}
+.nav a:hover{
+  color: #343434;
+}
+.social{
+  flex: 1 1 auto;
+  display: flex;
+}
+.social a {
+  font-size: 18px;
+ color: #fff;
+ padding: 0 15px;
+}
+.social a:hover{
+
+  color: #343434;
+}
+.principal{
+  background-color: rgba(0, 0, 0, 0);
+  height: 580px;
+  display: flex;
+  align-items: center;
+  padding: 10px 100px;
+}
+
+.section{
+  background-color: #f2f2f2;
+  display: flex;
+}
+.articles{
+  background-color: #f2f2f2;
+  display: flex;
+  flex: 2 1 auto;
+  flex-flow: row wrap; 
+}
+.aside{
+  flex: 1 1 auto;
+  margin: 10px 5px 10px 0;
+}
+h3{
+  color: #4d3e3e;
+  font-size: 13px;
+  padding: 10px 0;
+  margin-top: -80px;
+}
+h2{font-size: 25px;
+  text-transform: uppercase;
+  padding: 0 0 10px 0;
+color: #4d3e3e;;
+}
+
+.article{
+  color: #444;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 10px 10px 0 0;
+  flex: 1 1 45%;
+}
+.article img{
+  width: 100%;
+}
+
+.article a{
+  color: #fff;
+  font-size: 13px;
+  padding: 10px;
+  background-color: #4d3e3e;
+  margin: 10px 0;
+  display: inline-block;
+}
+.article a:hover{
+  background-color: dimgray;
+}
+.navegacion{
+  background-color: #4d3e3e;
+  flex: 1 1 100%;
+  margin: 0 10px 0 0;
+}
+.navegacion a{
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+ padding: 0 10px;
+ letter-spacing: 2px;
+}
+
+h4{
+  background-color: #4d3e3e;
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.aside img{
+  width: 300px;
+}
+.publicidad{
+  
+}
+.footer{
+  background-color: #4d3e3e;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+
+}
+.pie{
+  text-align: center;
+ padding: 5px;
+}
+.margen-interno{
+  padding: 0 50px;  
+}
+.pie a{
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  letter-spacing: 2px;
+}
+
+
+@media screen and (max-width: 1120px){
+.section{
+  flex-direction: column;
+}
+.menu{
+  flex-direction: column;
+  height: 100px;
+
+}
+.aside{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  }
+  .aside img{
+    width: 250px;
+  }
+.principal{
+  height: 450px;
+}
+}
+@media screen and (max-width: 780px){
+  .articles{
+    flex-direction: column;  
+    }
+    .aside{
+      flex-wrap: wrap;
+    }
+    .menu{
+      padding: 10px 0;
+    }
+    .aside img{
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 536px){
+    .aside{
+      flex-direction: column;
+    }
+    .nav{
+      font-size: 25px;
+    }
+    h1{
+      font-size: 18px;
+    }
+    span{
+      display: none;
+    }
+    .nav{
+      justify-content: space-between;
+
+    }
+    .principal{
+      padding: 20px;
+    }
+  
+  }
+
+
+
+
